@@ -24,8 +24,7 @@ def show_copyright():
     print(f"{Fore.RED}联系Dandan: \n QQ:712987787 QQ群:1036105927 \n 电报:sands0x1 电报群:https://t.me/+fjDjBiKrzOw2NmJl \n 微信: dandan0x1{Style.RESET_ALL}")
     print('=' * 50)
 
-# ========== 配置设置 ==========
-# 直接设置配置，不使用config.yaml文件
+# ========== 配置设置 =========
 config = {
     'run_count': 5,  # 每个账号运行次数
     'run_mode': 1  # 运行模式：1=正常，2=快速
