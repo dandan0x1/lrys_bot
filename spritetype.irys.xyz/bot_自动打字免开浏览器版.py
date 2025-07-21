@@ -24,7 +24,8 @@ def show_copyright():
     print(f"{Fore.RED}联系Dandan: \n QQ:712987787 QQ群:1036105927 \n 电报:sands0x1 电报群:https://t.me/+fjDjBiKrzOw2NmJl \n 微信: dandan0x1{Style.RESET_ALL}")
     print('=' * 50)
 
-# ========== 配置设置 =========
+# ========== 配置设置 ==========
+# 直接设置配置，不使用config.yaml文件
 config = {
     'run_count': 5,  # 每个账号运行次数
     'run_mode': 1  # 运行模式：1=正常，2=快速
@@ -132,6 +133,15 @@ async def spritetype(account, proxy, run_count, run_mode):
             headers = {
                 'accept': '*/*',
                 'content-type': 'application/json',
+                'accept-language': 'zh-CN,zh;q=0.9,zh-TW;q=0.8,ja;q=0.7,en;q=0.6',
+                'origin': 'https://spritetype.irys.xyz',
+                'priority': 'u=1, i',
+                'sec-ch-ua': '"Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"',
+                'sec-ch-ua-mobile': '?0',
+                'sec-ch-ua-platform': '"Windows"',
+                'sec-fetch-dest': 'empty',
+                'sec-fetch-mode': 'cors',
+                'sec-fetch-site': 'same-origin',
                 'referer': 'https://spritetype.irys.xyz/',
                 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
             }
